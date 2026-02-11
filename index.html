@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechDeals - Amazing Electronics Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fake urgency banner -->
+    <div class="urgency-banner" id="urgencyBanner">
+        <span class="blink">⚡ FLASH SALE ENDING IN: <span id="countdown">05:23</span> ⚡</span>
+        <span style="margin-left: 20px;">🔥 <span id="viewersCount">347</span> people viewing this page right now!</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🛒 TechDeals</h1>
+            <div class="header-right">
+                <span class="cart-icon">🛒 Cart (<span id="cartCount">0</span>)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Fake low stock alert -->
+        <div class="alert-box">
+            ⚠️ <strong>HURRY!</strong> Only <span class="stock-count">3</span> items left in stock!
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="badge-sale">75% OFF</div>
+                <div class="badge-limited">LIMITED</div>
+                <img src="https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Premium+Headphones" alt="Headphones">
+                <h3>Premium Wireless Headphones</h3>
+                <div class="fake-reviews">
+                    ⭐⭐⭐⭐⭐ <span style="color: #666;">(2,847 reviews)</span>
+                </div>
+                <div class="price-container">
+                    <span class="original-price">$399.99</span>
+                    <span class="sale-price">$99.99</span>
+                </div>
+                <p class="fake-claim">🏆 #1 Best Seller in Electronics</p>
+                <p class="scarcity">⏰ <span class="timer" data-time="127">2:07</span> left at this price!</p>
+                <button class="btn-primary" onclick="addToCart('Headphones', 99.99)">Add to Cart</button>
+                <p class="social-proof">✅ 2,340 people bought this today</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="badge-sale">80% OFF</div>
+                <div class="badge-hot">🔥 HOT</div>
+                <img src="https://via.placeholder.com/300x200/E94B3C/FFFFFF?text=Smart+Watch" alt="Smart Watch">
+                <h3>Ultra Pro Smart Watch</h3>
+                <div class="fake-reviews">
+                    ⭐⭐⭐⭐⭐ <span style="color: #666;">(4,129 reviews)</span>
+                </div>
+                <div class="price-container">
+                    <span class="original-price">$599.99</span>
+                    <span class="sale-price">$119.99</span>
+                </div>
+                <p class="fake-claim">🎖️ Award-Winning Design 2024</p>
+                <p class="scarcity">⚡ Only <strong>2 left</strong> - Selling fast!</p>
+                <button class="btn-primary" onclick="addToCart('Smart Watch', 119.99)">Add to Cart</button>
+                <p class="social-proof">✅ 1,876 sold in last 24 hours</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="badge-sale">70% OFF</div>
+                <img src="https://via.placeholder.com/300x200/6BC4A6/FFFFFF?text=Bluetooth+Speaker" alt="Speaker">
+                <h3>Premium Bluetooth Speaker</h3>
+                <div class="fake-reviews">
+                    ⭐⭐⭐⭐⭐ <span style="color: #666;">(3,592 reviews)</span>
+                </div>
+                <div class="price-container">
+                    <span class="original-price">$249.99</span>
+                    <span class="sale-price">$74.99</span>
+                </div>
+                <p class="fake-claim">🥇 Rated #1 by TechReview Magazine</p>
+                <p class="scarcity">⏰ <span class="timer" data-time="215">3:35</span> until price increases!</p>
+                <button class="btn-primary" onclick="addToCart('Speaker', 74.99)">Add to Cart</button>
+                <p class="social-proof">✅ 567 watching this item</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="badge-sale">85% OFF</div>
+                <div class="badge-limited">LAST CHANCE</div>
+                <img src="https://via.placeholder.com/300x200/9B59B6/FFFFFF?text=Wireless+Charger" alt="Charger">
+                <h3>Fast Wireless Charger Pro</h3>
+                <div class="fake-reviews">
+                    ⭐⭐⭐⭐⭐ <span style="color: #666;">(1,954 reviews)</span>
+                </div>
+                <div class="price-container">
+                    <span class="original-price">$129.99</span>
+                    <span class="sale-price">$19.99</span>
+                </div>
+                <p class="fake-claim">⚡ 3X Faster Than Regular Chargers!</p>
+                <p class="scarcity">🔥 Almost sold out! Only <strong>1 left</strong>!</p>
+                <button class="btn-primary" onclick="addToCart('Charger', 19.99)">Add to Cart</button>
+                <p class="social-proof">✅ 4,231 customers highly recommend</p>
+            </div>
+        </div>
+
+        <!-- Fake testimonials section -->
+        <div class="testimonials">
+            <h2>What Our Customers Say 💬</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Best purchase ever! Arrived in 2 days and quality is amazing!"</p>
+                    <strong>- Sarah M. ⭐⭐⭐⭐⭐</strong>
+                    <small>Verified Buyer</small>
+                </div>
+                <div class="testimonial">
+                    <p>"I was skeptical but wow! Exceeded all my expectations!"</p>
+                    <strong>- John D. ⭐⭐⭐⭐⭐</strong>
+                    <small>Verified Buyer</small>
+                </div>
+                <div class="testimonial">
+                    <p>"Can't believe the quality for this price. Highly recommend!"</p>
+                    <strong>- Emma L. ⭐⭐⭐⭐⭐</strong>
+                    <small>Verified Buyer</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hidden subscription checkbox trick -->
+        <div class="newsletter-section">
+            <h3>🎁 Get Your FREE Gift!</h3>
+            <p>Enter your email to receive your welcome discount:</p>
+            <input type="email" id="emailInput" placeholder="Enter your email" class="email-input">
+            <div class="checkbox-container">
+                <input type="checkbox" id="subscribeCheckbox" checked>
+                <label for="subscribeCheckbox" class="small-text">
+                    I agree to receive daily promotional emails, newsletters, and partner offers (uncheck to opt-out)
+                </label>
+            </div>
+            <button class="btn-secondary" onclick="submitEmail()">Claim My Gift 🎉</button>
+        </div>
+    </main>
+
+    <!-- Fake exit-intent popup -->
+    <div id="exitPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <h2>⚠️ WAIT! Don't Leave Yet!</h2>
+            <p style="font-size: 24px; color: #E94B3C; font-weight: bold;">Get 90% OFF Your First Order!</p>
+            <p>This exclusive offer expires in:</p>
+            <div class="popup-countdown" id="popupCountdown">00:59</div>
+            <button class="btn-huge" onclick="closePopup()">CLAIM MY DISCOUNT NOW! 🎁</button>
+            <p class="tiny-text" onclick="closePopup()" style="cursor: pointer;">No thanks, I prefer paying full price</p>
+        </div>
+    </div>
+
+    <!-- Fake notification popups -->
+    <div id="notificationContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
